@@ -1,0 +1,10 @@
+<ul class="list m-3">
+    <app-task *ngFor="let task of parentTasks;" [task]="task"></app-task>
+</ul>
+
+
+<div class="is-flex is-align-center is-space-between shortcuts">
+    <span class="total-count">Nombre d'éléments : {{parentTasks.length}}</span>
+    
+    <button (click)="effacerTous()" type="button" class="button is-text" >Effacer tout</button>
+</div>

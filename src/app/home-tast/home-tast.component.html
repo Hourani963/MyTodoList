@@ -1,0 +1,21 @@
+
+<nav class="navbar">
+    <a class="nav-item">
+        <img src="assets/my-logo.png" alt="my logo" />
+    </a>
+    <a class="nav-item">Home</a>
+    <a class="nav-item">MyAccount</a>
+  </nav>
+  
+  <div class="is-flex is-align-center is-fullheight">
+    <div class="container">
+      <h1>MyTodoList</h1>
+  
+      
+      <app-add-task></app-add-task>
+      <app-task-list [parentTasks]="tasks" ></app-task-list>
+  
+  
+      
+    </div>
+  </div>

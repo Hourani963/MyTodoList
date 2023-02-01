@@ -1,0 +1,22 @@
+<li class="task">
+    <label class="is-flex is-align-center">
+        <input type="checkbox" class="input hidden" id="task-3">
+        <span class="checkmark mr-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" />
+            </svg>
+        </span>
+        <span class="task-name">{{task.name}}</span>
+        
+    </label>
+    <button (click)="editTask(task.id)" mat-icon-button matTooltip="Edit this task">
+        <mat-icon>
+            edit
+        </mat-icon>
+    </button>
+    <button (click)="deleteTask(task.id)"  mat-icon-button matTooltip="Delete this task">
+        <mat-icon>
+            delete
+        </mat-icon>
+    </button>
+</li>
