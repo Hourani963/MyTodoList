@@ -10,7 +10,7 @@ import {Task} from "../@shared/models/task"
 export class HomeTastComponent {
   title = 'MyTodoList';
 
-  tasks: any = [];
+  tasks : Task[] = [];
 
   constructor(private _taskService : TaskService){}
 

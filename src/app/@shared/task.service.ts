@@ -16,7 +16,7 @@ export class TaskService {
     return this._httpClient.get<Task[]>(TASK_API)
   }
 
-  postTask(task : any){
+  postTask(task : Task){
     this._httpClient.post(TASK_API, {"name" : task}).subscribe(
       (res) => console.log(res)
     );

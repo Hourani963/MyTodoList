@@ -9,7 +9,6 @@ import {TaskService} from '../@shared/task.service'
 })
 export class TaskListComponent {
 
-  nbrTasks !: number
 
   @Input() public parentTasks!:Task[];
 
